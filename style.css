@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    font-family:myfont ;
+}
+
+
+li{
+    list-style: none;
+}
+
+.main-menu ul li
+{
+display: inline-block;
+position: relative;
+}
+.main-menu ul> li:hover> ul
+{
+opacity: 1;
+visibility: visible;
+transition: all 0.3s ease;
+}
+
+div.a > p {
+
+    background-color: red;
+}
+.main-menu ul> li> ul
+{ 
+position: absolute;
+top:52px;
+right: 0;
+width: 200px;
+background-color: #7777;
+padding: 5px;
+padding-bottom: 0;
+opacity: 0;
+visibility: hidden;
+transition: all 0.3s ease;
+}
+
+.main-menu ul li ul li 
+{ 
+display: block;
+width: 100%;
+text-align:right ;
+}
+
+.main-menu ul li ul li ul
+{ 
+top: 0;
+right: 100%;
+}
+.main-menu ul li ul li a
+{ 
+padding: 8px;
+display: block;
+
+background-color: #fff;
+margin-bottom: 5px;
+border-radius: 5px;
+}
+
+
+a{
+    text-decoration: none
+}
+.main-content
+{
+
+    width: 960px;
+    margin: 0 auto;
+}
+nav.main-menu{
+
+
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.main-menu ul li a
+{
+display: inline-block;
+padding: 15px;
+color: #7777;
+}
+
+section.top-wrap
+{
+padding: 20px;
+}
+
+img{
+
+max-width: 100%;
+}
+
+.top-wrap-pic{
+
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+@font-face {
+    font-family: "myfont";
+    src: url("./fonts/B-NAZANIN.TTF");
+}
+
+
+.top
+{
+    width: 100%;
+    background-image:url("./images/back2.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
